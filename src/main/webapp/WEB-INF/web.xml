@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>com.zengshihao.week2.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet>-->
+<!--        <servlet-name>safety</servlet-name>-->
+<!--        <jsp-file>/week2/register.jsp</jsp-file>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>safety</servlet-name>-->
+<!--        <url-pattern>/week2/register.jsp</url-pattern>-->
+<!--    </servlet-mapping>-->
+    <!-- <servlet>
+      <servlet-name>LifeCycleServlet</servlet-name>
+      <servlet-class>com.zengshihao.week3.LifeCycleServlet</servlet-class>
+        </servlet>
+  <servlet-mapping>
+      <servlet-name>LifeCycleServlet</servlet-name>
+      <url-pattern>/life</url-pattern>
+  </servlet-mapping>-->
+<!--    <servlet>-->
+<!--        <servlet-name>LifeCycleServlet</servlet-name>-->
+<!--        <servlet-class>com.zengshihao.week3.LifeCycleServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>LifeCycleServlet</servlet-name>-->
+<!--        <url-pattern>/life</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:sqlserver://localhost;databaseName=userdb</param-value>
+    </context-param>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>sa</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>zsh785115348</param-value>
+    </context-param>
+    <!--<servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.zengshihao.week3.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+-->
+    <!--
+    <servlet>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <servlet-class>com.zengshihao.week4.ConfigDemoServlet</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>zengshihao</param-value>
+        </init-param>
+        <init-param>
+            <param-name>studentId</param-name>
+            <param-value>2019211001000706</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>
+    -->
+    
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
+
+
+
+
+</web-app>
