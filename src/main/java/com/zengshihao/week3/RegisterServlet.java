@@ -10,7 +10,7 @@ import java.sql.*;
 import java.text.SimpleDateFormat;
 
 @WebServlet(
-        urlPatterns = {"/register"}
+        urlPatterns = {"/Register"}
 )
 
 public class RegisterServlet extends HttpServlet {

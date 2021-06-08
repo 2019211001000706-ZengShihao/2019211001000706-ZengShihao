@@ -50,7 +50,7 @@
 <%if(!(request.getAttribute("message")==null)){
     out.println("<h3>"+request.getAttribute("message")+"</h3>");
 }%>
-<form method="post" action="/2019211001000706Zengshihao_war_exploded/register">
+<form method="post" action="/2019211001000706Zengshihao_war_exploded/Register">
     <input type="text" name="Username" placeholder="Username" />
     <input type="password" name="password" placeholder="password" />
     <input type="text" name="Email" placeholder="Email">
